@@ -135,7 +135,7 @@ jobs:
         id: render-api-task-def
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
-          task-definition: ${{ steps.render-web-task.def.outputs.task-definition }}
+          task-definition: ${{ env.ECS_TASK_DEFINITION }}
           container-name: api
           image: ${{ steps.login-ecr.outputs.registry }}/${{ secrets.AWS_ECR_WEB_SERVER_REPOSITORY }}
 
