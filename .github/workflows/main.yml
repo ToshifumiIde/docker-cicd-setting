@@ -24,7 +24,8 @@ jobs:
         working-directory: web
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Build an Image and Run Tests
         run: |
@@ -68,7 +69,8 @@ jobs:
         working-directory: api
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Build an Image and Run Tests
         run: |

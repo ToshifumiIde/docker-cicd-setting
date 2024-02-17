@@ -2,7 +2,7 @@
   "containerDefinitions": [
     {
       "name": "web",
-      "image": "<image>", //main.ymlに記載されている値に上書きされるため"<image>"のダミーデータを入力
+      "image": "<image>",
       "cpu": 0,
       "memoryReservation": 512,
       "portMappings": [
@@ -28,7 +28,7 @@
     },
     {
       "name": "api",
-      "image": "<image>", //main.ymlに記載されている値に上書きされるため"<image>"のダミーデータを入力
+      "image": "<image>",
       "cpu": 0,
       "memoryReservation": 512,
       "portMappings": [
@@ -56,7 +56,7 @@
       }
     }
   ],
-  "family": "simple-cicd-def", // AWSのタスク定義で設定した内容、違う名前にしている場合は変更が必要
+  "family": "simple-cicd-def",
   "executionRoleArn": "ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "revision": 4,
