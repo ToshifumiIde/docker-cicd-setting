@@ -7,8 +7,8 @@ on:
 
 env:
   AWS_REGION: ap-northeast-1
-  ECS_SERVER: ti-simple-cicd-service
-  ECS_CLUSTER: simple-cicd-cluster
+  ECS_SERVER: simple-cicd-service
+  ECS_CLUSTER: ti-simple-cicd-cluster
   ECS_TASK_DEFINITION: .aws/task-definition.json
 
 permissions:
